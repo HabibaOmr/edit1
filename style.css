@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #304675, #2f4c8c);
+    color: #d8e1e8;
+    text-align: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d8e1e8;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #98bad5;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 200px;
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    color: #d8e1e8;
+    display: block;
+    padding: 5px 15px;
+    transition: background 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background: #98bad5;
+    color: #304675;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #c6d3e3;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+header {
+    padding: 20px;
+    background: #4b6a90;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d8e1e8;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #98bad5;
+}
+
+.courses {
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.course-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.course-info p {
+    font-size: 1rem;
+    color: #d8e1e8;
+    margin-bottom: 15px;
+}
+
+.course-info .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #98bad5;
+    color: #304675;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.course-info .btn:hover {
+    background: #c6d3e3;
+    transform: scale(1.05);
+}
+
+
+.courses h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c6d3e3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.courses h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(to right, #98bad5, #c6d3e3);
+    margin: 5px auto 0;
+    transition: width 0.4s ease-in-out;
+}
+
+.courses h2:hover::after {
+    width: 80%;
+}
+
+
+
+body {
+    opacity: 0;
+    animation: fadeInPage 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+header {
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: slideDown 1s ease-out forwards 0.5s;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+    height: 80vh;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+@keyframes fadeInHero {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.courses {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1.5s ease-out forwards 1s;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    max-width: 50%;
+    animation: fadeInHero 1.5s ease-in-out;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    animation: fadeInHero 1.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+}
+
+footer {
+    background: linear-gradient(to right, #304675, #2f4c8c);
+    color: #d8e1e8;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-radius: 20px 20px 0 0;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-content p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #98bad5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: #c6d3e3;
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 15px;
+    }
+}
+
+
+body {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-content p {
+        font-size: 1rem;
+    }
+}
+
+
+
