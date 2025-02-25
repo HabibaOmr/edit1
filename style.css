@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
+    /* padding: 10px 50px; */
 }
 
 nav ul {
@@ -81,13 +81,20 @@ nav ul li a:hover {
 
 .hero {
     display: flex;
+    background-image: url("https://i.postimg.cc/K8hdy6bX/46d901d6-1540-424d-93d7-b5a37529cff2.jpg");
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     align-items: center;
     justify-content: center;
     height: 80vh;
     text-align: center;
 }
-
+.hero-content{
+    margin-top: 200px;
+    margin-left: 700px;
+}
 .hero h2 {
     font-size: 3rem;
     animation: fadeIn 1.5s ease-in-out;
@@ -104,16 +111,34 @@ nav ul li a:hover {
     padding: 15px 30px;
     margin-top: 20px;
     font-size: 1.2rem;
+    width: 250px;
+    text-align: center;
     background: #98bad5;
     color: #304675;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 0px;
     transition: transform 0.3s, background 0.3s;
 }
 
 .btn:hover {
     transform: scale(1.1);
     background: #c6d3e3;
+}
+
+
+.hero_icon i{
+    margin-right: 150px;
+    margin-top: 30px;
+    color: #98bad5;
+}
+.hero_icon i span{
+    margin-left: 5px;
+}
+a{
+    text-decoration: none;
+}
+.hero_icons{
+    margin-right: 1100px;
 }
 
 @keyframes fadeIn {
@@ -134,7 +159,7 @@ nav ul li a:hover {
 
 
 header {
-    padding: 20px;
+    /* padding: 20px; */
     background: #4b6a90;
     backdrop-filter: blur(10px);
     border-radius: 10px;
